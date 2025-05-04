@@ -3,7 +3,7 @@ export interface Task {
   title: string;
   description?: string;
   completed: boolean;
-  createdAt: string;  // ✅ איחדנו את ההגדרה כך שתכלול את כל השדות
+  createdAt: string;  
 }
 
 export interface Quote {
