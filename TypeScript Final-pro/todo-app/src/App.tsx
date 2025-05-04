@@ -109,7 +109,6 @@ const App = () => {
         <button 
           onClick={() => setFilter("completed")} 
           className={`filter-button ${filter === "completed" ? "active" : ""}`}>
-          ✅ משימות שבוצעו
         </button>
         <button 
           onClick={() => setFilter("incomplete")} 
@@ -128,7 +127,7 @@ const App = () => {
                     taskTitle={task.title}
                     completed={task.completed}
                     onToggle={() => toggleTask(task.id)}
-                    onDelete={() => deleteTask(task.id)} // ✅ ודא שהפרופס onDelete מועבר כראוי
+                    onDelete={() => deleteTask(task.id)} 
                   />
 
 
