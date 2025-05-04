@@ -9,7 +9,7 @@ interface TaskItemProps {
   timestamp?: { seconds: number };
   priority: number;
   archived: boolean;
-  onToggle: () => void; // ✅ הוספנו כדי להפעיל שינוי
+  onToggle: () => void; 
   updateTask: (task: Partial<TaskItemProps>) => void;
   deleteTask: (id: number) => Promise<void>;
 }
